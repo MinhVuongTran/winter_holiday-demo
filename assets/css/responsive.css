@@ -1,0 +1,403 @@
+/* PC */
+@media (min-width: 64em) {
+    .header__mobile-logo {
+        display: none;
+    }
+
+    .header__mobile-bar {
+        display: none;
+    }
+
+    .header__navbar-item--label {
+        display: none;
+    }
+
+    .dot__btn-mobile,
+    .dot__btn-tablet {
+        display: none;
+    }
+}
+
+/* Tablet & mobile */
+@media (max-width: 63.9375em) {
+     .header__wrap {
+        background-color: var(--primary-color);
+        justify-content: space-around;
+        overflow: hidden;
+    }
+
+    .header__navbar-list--checked:checked ~ .header__navbar-list {
+        display: block;
+    }
+
+    .header__navbar-list--checked:checked ~ .mobile__overlay {
+       display: block;
+    }
+
+    .header__logo {
+        order: 1;
+    }
+
+    .header__logo-img {
+        display: none;
+    }
+    .header__mobile-logo {
+        display: block;
+    }
+
+    .header__navbar {
+        position: relative;
+    }
+
+    .header__mobile-bar {
+        display: block;
+        color: var(--white-color);
+    }
+
+    .header__navbar-list {
+        display: none;
+        position: fixed;
+        top: var(--header-height);
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        padding-top: 8px;
+        background-color: var(--white-color);
+        overflow-y: scroll;
+        max-height: 350px;
+        animation: fadeIn linear 0.3s;
+    }
+
+    .header__navbar-item {
+        margin: 0 110px;
+    }
+
+    .header__navbar-item:last-child {
+        position: relative;
+        border-bottom: none;
+    }
+
+    .header__navbar-item-link {
+        display: block;
+        margin: 0;
+        padding: 8px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .header__navbar-item--label {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 8px 4px 8px 0;
+        font-size: 1.6rem;
+    }
+
+    .subnav__list {
+        display: none;
+        position: relative;
+        width: 100%;
+    }
+
+    .subnav__item {
+        height: unset;
+        line-height: unset;
+    }
+
+    .subnav__item:first-child {
+        margin: 0;
+    }
+
+    .subnav__link {
+        display: block;
+        margin: 0 0 0 38px;
+        padding: 8px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .subnav__link::after,
+    .header__navbar-item-link::after {
+        display: none;
+    }
+
+    .header__user {
+        order: 2;
+    }
+
+    .header__tools {
+        display: none;
+    }
+
+    .tour__preview {
+        width: 80%;
+    }
+
+    .reviewer__content-card {
+        display: none;
+    }   
+
+    .tour__activity-content  {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tour__activity-item {
+        width: 100%;
+        max-width: 210px;
+        margin: 0 auto;
+        padding: 50px 0 0;
+    }
+
+    .tour__resort-list {
+        flex-direction: column;
+    }
+
+    .reviewers__wrap {
+        top: 15%;
+        width: 100%;
+    }
+
+    .footer {
+        padding: 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width:  63.9375em) {
+    .slider {
+        height: 630px;
+    }
+
+    .slider__big-title {
+        font-size: 8.2rem;
+        line-height: 8.2rem;
+    }
+
+    .slider__introduce {
+        width: 550px;
+    } 
+    
+    .tour__section {
+        display: none;
+    }
+
+    .tour__section:first-child {
+        display: block;
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    .tour__section:last-child {
+        display: block;
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .dot__btn-mobile {
+        display: none;
+    }
+    
+    .tour__preview--big-title {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+
+    .reviewers{
+        height: 800px;
+    }
+
+    .reviewer__content-card:first-child {
+        display: block;
+        width: 50%;
+        text-align: center;
+        margin: 0 20px 0 0;
+    }
+
+    .reviewer__content-card:nth-child(2) {
+        display: block;
+        width: 50%;
+        text-align: center;
+        margin: 0 0 0 20px;
+        border-radius: 10px;
+    }
+
+    .tour__activity-heading {
+        width: 75%;
+    }
+
+    .tour__activity-title--big {
+        font-size: 5.8rem;
+        line-height: 5.8rem;
+    }
+
+    .tour__achievement-member {
+        display: none;
+    }
+
+    .tour__achievement-member:first-child {
+        display: block;
+        width: 50%;
+    }
+
+    .tour__achievement-member:nth-child(2) {
+        display: block;
+        width: 50%;
+    }
+
+    .tour__achievements-data--list {
+        flex-wrap: wrap;
+    }
+
+    .tour__achievements-data--item {
+        width: 50%;
+    }
+    
+    .tour__resort-item {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px 40px;
+    }
+
+    .footer__wrap {
+        flex-wrap: wrap;
+        padding: 106px 80px 78px;
+    }
+
+    .footer__item {
+        width: 50%;
+    }
+
+    .footer__item:nth-child(3),
+    .footer__item:last-child {
+        margin-top: 65px;
+    }
+    
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .header__navbar-item {
+        width: 75%;
+        margin: auto;
+    }
+
+    .auth__form {
+        width: 90%;
+    }
+    
+    .slider__small-title {
+        font-size: 3.4rem;
+    }
+
+    .slider__big-title {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    
+    .slider__introduce {
+        width: 300px;
+    }
+    
+    .tour__section {
+        display: none;
+    }
+
+    .tour__section:first-child {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .dot__btn-mobile {
+        display: block;
+    }
+    
+    .tour__preview--big-title {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .tour__preview-btn {
+        width: 60%;
+    }
+
+    .reviewers {
+        height: 750px;
+    }
+
+    .reviewer__heading-title {
+        font-size: 3.5rem;
+    }
+
+    .reviewer__content-card:first-child {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tour__activity-heading {
+        padding-bottom: 20px;
+    }
+
+    .tour__activity-title--big {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        white-space: nowrap;
+    }
+
+    .tour__achievement-member {
+        display: none;
+    }
+
+    .tour__achievement-member:first-child {
+        display: block;
+        width: 100%;
+    }
+
+    .tour__achievements-data--list {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .tour__achievements-data--item {
+        padding: 20px;
+    }
+
+    .tour__resort-title-big {
+        font-size: 3.5rem;
+    }
+
+    .tour__resort-item {
+        width: 100%;
+        padding: 20px 40px;
+    }
+
+    .tour__resort-star {
+        top: 18%;
+        right: 12%;
+    }
+
+    .footer  h4 {
+        margin-bottom: 4px;
+    }
+
+    .footer__wrap {
+        flex-direction: column;
+        padding: 106px 40px 78px;
+    }
+
+    .footer__item {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .footer__item-posts, 
+    .footer__item-description,
+    .footer__item-subscribe--text {
+        margin-bottom: 8px;
+    }
+
+    .dot__btn {
+        display: none
+    }
+}
